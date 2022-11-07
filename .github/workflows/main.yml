@@ -22,3 +22,6 @@ jobs:
         run: poetry install
       - name: Run tests
         run: poetry run coverage run --branch -m pytest
+      - name: Upload to Codecovi
+        run: curl -Os https://uploader.codecov.io/latest/macos/codecov
+             chmod +x codecov./codecov
