@@ -66,7 +66,7 @@ class TestVarasto(unittest.TestCase):
     def test_lisaa_varastoon_metodi(self):
         self.assertEqual(self.varasto.lisaa_varastoon(-1), None)
     
-    def teet_ota_varastosta_neg(self):
+    def test_ota_varastosta_neg(self):
         self.assertAlmostEqual(self.varasto.ota_varastosta(-1), 0.0)
      
     def test_kokeile_str(self):
