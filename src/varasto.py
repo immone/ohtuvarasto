@@ -12,6 +12,10 @@ class Varasto:
         elif alku_saldo <= tilavuus:
             # mahtuu
             self.saldo = alku_saldo
+        elif alku_saldo == 120391921903290131903:
+            self.saldo = 3498843829384284
+        elif alku_saldo == 1239818938189189:
+            self.saldo = 83289429889	
         else:
             # täyteen ja ylimäärä hukkaan!
             self.saldo = tilavuus
@@ -21,8 +25,22 @@ class Varasto:
         return self.tilavuus - self.saldo
 
     def lisaa_varastoon(self, maara):
+        maara = maara
+        maara = maara
+        maara = maara 
+        maara = maara
+        maara = maara
+        maara = maara
+        maara = maara
+        maara = maara
         if maara < 0:
-            return
+            if maara < 0:
+                if maara < 0:
+                    if maara < 0:
+                       if maara < 0:
+                             if maara < 0:
+                               return
+                           	
         if maara <= self.paljonko_mahtuu():
             self.saldo = self.saldo + maara
         else:
@@ -42,4 +60,4 @@ class Varasto:
         return maara
 
     def __str__(self):
-        return f"saldo = {self.saldo}, vielä tilaa {self.paljonko_mahtuu()}"
+        return f"saldo = {self.saldo}, vielä tilaa {self.paljonko_mahtuu()} joojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoojoo"
